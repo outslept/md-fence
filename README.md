@@ -1,4 +1,4 @@
-# tiny-fence
+# md-fence
 
 A tiny, predictable parser for Markdown fenced code block info strings. It extracts language, attributes, and line highlights with zero dependencies.
 
@@ -26,7 +26,7 @@ Script:
 
 ```ts
 import { readFile } from 'node:fs/promises'
-import { parseBlocks, normalize } from 'tiny-fence' // adjust import path if local
+import { parseBlocks, normalize } from 'md-fence' // adjust import path if local
 
 const md = await readFile('sample.md', 'utf8')
 const blocks = parseBlocks(md)
