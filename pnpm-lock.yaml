@@ -27,8 +27,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(@types/node@24.9.1)
       zshy:
-        specifier: ^0.4.4
-        version: 0.4.4(typescript@5.9.3)
+        specifier: ^0.7.0
+        version: 0.7.0(typescript@5.9.3)
 
 packages:
 
@@ -994,8 +994,8 @@ packages:
   fast-uri@3.1.0:
     resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
 
-  fastq@1.19.1:
-    resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
+  fastq@1.20.1:
+    resolution: {integrity: sha512-GGToxJ/w1x32s/D2EKND7kTil4n8OVk/9mycTc4VDza13lOvpUZTGX3mFSCtV9ksdGBVzvsyAVLM6mHFThxXxw==}
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -1836,8 +1836,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zshy@0.4.4:
-    resolution: {integrity: sha512-yNLusNH7L6JHeZNtQcauWO//p/lD75W3M4TE+ZBz9DPZ20RHbMv/2worTxoByUuitvCR9bkn8XDownVTFOtXsQ==}
+  zshy@0.7.0:
+    resolution: {integrity: sha512-nBQv7JaVC+lUMK9+uD9LgXNHPsz3uo5gdk33ojCndY8hT4EkrGovwjacPsvB7BlTuV++i9bPQFFzWYrQyTH3DA==}
     hasBin: true
     peerDependencies:
       typescript: '>5.5.0'
@@ -2044,7 +2044,7 @@ snapshots:
   '@nodelib/fs.walk@1.2.8':
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.19.1
+      fastq: 1.20.1
 
   '@nolyfill/is-core-module@1.0.39': {}
 
@@ -2884,7 +2884,7 @@ snapshots:
 
   fast-uri@3.1.0: {}
 
-  fastq@1.19.1:
+  fastq@1.20.1:
     dependencies:
       reusify: 1.1.0
 
@@ -3843,7 +3843,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zshy@0.4.4(typescript@5.9.3):
+  zshy@0.7.0(typescript@5.9.3):
     dependencies:
       arg: 5.0.2
       fast-glob: 3.3.3
