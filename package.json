@@ -16,7 +16,7 @@
   "zshy": "src/index.ts",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
-    "@types/node": "^24.9.1",
+    "@types/node": "^25.1.0",
     "@vitest/coverage-v8": "4.0.1",
     "eslint": "^9.38.0",
     "neostandard": "^0.12.2",
