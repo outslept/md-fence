@@ -9,12 +9,8 @@
     "module": "nodenext",
     "target": "esnext",
     // For nodejs:
-    "lib": [
-      "esnext"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["esnext"],
+    "types": ["node"],
     // Other Outputs
     "sourceMap": true,
     "declaration": true,
@@ -36,9 +32,7 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

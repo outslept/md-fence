@@ -18,20 +18,20 @@ sample.md:
 
 ```js
 // GET request
-const response = await fetch('https://api.example.com/data');
+const response = await fetch("https://api.example.com/data");
 ```
 ````
 
 Script:
 
 ```ts
-import { readFile } from 'node:fs/promises'
-import { parseBlocks, normalize } from 'md-fence' // adjust import path if local
+import { readFile } from "node:fs/promises";
+import { parseBlocks, normalize } from "md-fence"; // adjust import path if local
 
-const md = await readFile('sample.md', 'utf8')
-const blocks = parseBlocks(md)
-const results = blocks.map(b => ({ info: b.info, meta: normalize(b.meta), code: b.code }))
-console.log(JSON.stringify(results, null, 2))
+const md = await readFile("sample.md", "utf8");
+const blocks = parseBlocks(md);
+const results = blocks.map((b) => ({ info: b.info, meta: normalize(b.meta), code: b.code }));
+console.log(JSON.stringify(results, null, 2));
 ```
 
 Output:
@@ -50,18 +50,18 @@ Add metadata:
 
 ````md
 ```ts {1,3-5} title="App.tsx" line-numbers
-const a = 1
+const a = 1;
 function foo() {}
-foo()
-bar()
-baz()
+foo();
+bar();
+baz();
 ```
 ````
 
 Normalized meta:
 
 ```json
-{ "lang": "ts", "title": "App.tsx", "lineNumbers": true, "highlight": [1,3,4,5], "attrs": {} }
+{ "lang": "ts", "title": "App.tsx", "lineNumbers": true, "highlight": [1, 3, 4, 5], "attrs": {} }
 ```
 
 ## Info string syntax

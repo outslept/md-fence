@@ -10,16 +10,16 @@ The native `fetch` API is now available in Node.js (since v18.x) and all modern 
 
 ```js
 // GET request
-const response = await fetch('https://api.example.com/data');
+const response = await fetch("https://api.example.com/data");
 const data = await response.json();
 
 // POST request with JSON
-const response = await fetch('https://api.example.com/data', {
-  method: 'POST',
+const response = await fetch("https://api.example.com/data", {
+  method: "POST",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
-  body: JSON.stringify({ key: 'value' })
+  body: JSON.stringify({ key: "value" }),
 });
 ```
 
