@@ -4,7 +4,7 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build": "zshy",
+    "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run --reporter=dot",
@@ -13,7 +13,6 @@
     "prepare": "pnpm run build",
     "prepublishOnly": "pnpm run lint && pnpm run test && pnpm run build"
   },
-  "zshy": "src/index.ts",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@types/node": "^24.9.1",
@@ -21,8 +20,7 @@
     "eslint": "^9.38.0",
     "neostandard": "^0.12.2",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.1",
-    "zshy": "^0.4.4"
+    "vitest": "^4.0.1"
   },
   "files": [
     "dist"
