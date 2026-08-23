@@ -5,18 +5,20 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
     "test": "vitest run --reporter=dot",
     "test:watch": "vitest --reporter=dot",
-    "test:cov": "vitest run --coverage --reporter=dot",
+    "test:cov": "vitest run --coverage --reporter=dot"
   },
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@types/node": "^24.9.1",
     "@vitest/coverage-v8": "4.0.1",
-    "eslint": "^9.38.0",
-    "neostandard": "^0.12.2",
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.1"
   },
