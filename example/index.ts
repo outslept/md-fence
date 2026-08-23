@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises'
-import { parseBlocks, normalize } from '../src/fence.js'
+import { normalize, parseBlocks } from '../src/index.js'
 
 const md = await readFile('sample.md', 'utf8')
 const blocks = parseBlocks(md)
